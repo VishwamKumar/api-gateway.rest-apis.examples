@@ -2,7 +2,7 @@
 
 ## Description
 This is Gateway API, gives ability to provide one gateway for all the REST APIs.
-This example is uses Ocelot nuget package to make this happen.
+This example uses Ocelot nuget package to make this happen.
 In this example it uses only two REST APIs, any number of REST APIs can be added in this through configuration file.
 
 # Authors
