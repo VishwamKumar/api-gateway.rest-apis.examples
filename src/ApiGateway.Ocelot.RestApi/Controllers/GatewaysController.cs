@@ -1,4 +1,4 @@
-﻿namespace OcelotApp.RestApi.GatewayService.Controllers;
+﻿namespace ApiGateway.Ocelot.RestApi.Controllers;
 
 [ApiController]
 [Route("[controller]")]
