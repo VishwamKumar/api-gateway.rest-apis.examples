@@ -1,14 +1,17 @@
-﻿###✅ Test After This Setup
-Run both:
+﻿### ✅ Test After This Setup
 
-Your Hour Tracker API at https://localhost:7198
+Run both services:
 
-Your API Gateway (e.g., on https://localhost:7153)
+- Your Hour Tracker API at: `https://localhost:7198`
+- Your API Gateway at: `https://localhost:7153`
+
 ---
 
-Then hit:
-----
-|Proxy URL |	Target Backend Call |
-|https://localhost:7153/api/v1/auths/login	→ | https://localhost:7198/api/v1/auths/login|
-|https://localhost:7153/api/v1/customers	→ | https://localhost:7198/api/v1/customers|
-|https://localhost:7153/api/v1/customers/1	→ | https://localhost:7198/api/v1/customers/1|
+Then hit the following proxy URLs and verify they correctly forward to the backend:
+
+| Proxy URL                                 | Target Backend URL                          |
+|-------------------------------------------|--------------------------------------------|
+| `https://localhost:7153/api/v1/auths/login`   | `https://localhost:7198/api/v1/auths/login`    |
+| `https://localhost:7153/api/v1/customers`      | `https://localhost:7198/api/v1/customers`       |
+| `https://localhost:7153/api/v1/customers/1`    | `https://localhost:7198/api/v1/customers/1`     |
+
